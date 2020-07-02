@@ -1,0 +1,3639 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAYOUTS01FLEX</title>
+    <link rel="stylesheet" href="layout.css" />
+
+    <!-- <link rel="stylesheet" href="layout.js" /> -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+    <div class="container" id="contain">
+      <div class="header">
+        
+        <div class="childheader01">
+        <div class="columnpart">
+          <div class="button-wrapper horizondal">
+            <p>Align Horizontal</p>
+            <button><i class="fas fa-align-left"></i></button>
+        <button><i class="fas fa-align-center"></i></button>
+        <button><i class="fas fa-align-right"></i></button>
+        <button><i class="fas fa-align-justify"></i></button>
+          </div>
+        </div>
+        <div class="columnpart">
+          <div class="button-wrapper vertical">
+            <p>align vertical</p>
+            <button><i class="fas fa-align-left"></i></button>
+            <button><i class="fas fa-align-center"></i></button>
+            <button><i class="fas fa-align-right"></i></button>
+          </div>
+        </div>
+        <div class="columnpart">
+          <div class="button-wrapper alignbychar">
+            <p>align by character</p>
+            <select class="selectpicker">
+              <option data-icon="glyphicon-music">choose</option>
+              <option data-icon="glyphicon-star">Option2</option>
+              <option data-icon="glyphicon-glass">Option3</option>
+            </select>
+          </div>
+        </div>
+        <div class="columnpart">
+          <div class="button-wrapper indentation">
+            <p>Indentation</p>
+            <button><i class="fas fa-align-center"></i></button>
+        <button><i class="fas fa-align-right"></i></button>
+          </div>
+        </div>
+        <div class="columnpart">
+          <div class="button-wrapper rotatecontent">
+            <p>Rotate Content</p>
+            <button><i class="fas fa-align-left"></i></button>
+        <button><i class="fas fa-align-center"></i></button>
+        <button><i class="fas fa-align-right"></i></button>
+          </div>
+        </div>
+        <div class="columnpart">
+          <div class="button-wrapper boder01">
+            <p>Borders</p>
+            <select class="selectpicker">
+              <option value="fas fa-border-all">Option1</option>
+              <option >Option2</option>
+              <option >Option3</option>
+            </select>
+          </div>
+        </div>
+        <div class="columnpart grideline01">
+          <div class="button-wrapper ">
+            <form action="/action_page.php">
+              <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+              <label for="vehicle1" id="topgridtxt">Gridlines</label>
+            </form>
+          </div>
+        </div>
+        
+        <div class="columnpart">
+          <div class="button-wrapper zoom">
+            <!-- <p>zoom</p> -->
+        
+            <button><i class="fas fa-search"></i></button>
+            <button><i class="fas fa-search-plus"></i></button>
+            <button><i class="fas fa-arrows-alt"></i></button>
+          </div>
+        </div>
+        <div class="columnpart">
+          <div class="button-wrapper">
+            <!-- <p>Text over button 1</p> -->
+            <button id="up">Update</button>
+          </div>
+        </div>
+        <div class="columnpart">
+          <div class="button-wrapper">
+            <button id="can">Cancel</button>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <!-- <div class="sidebar-items"></div> -->
+        <div class="sitem1">
+          <h4 id="tablename">Table Name</h4>
+          <h4 id="pageno">Page No</h4>
+          <h6 id="tableformat">TABLE FORMATTING</h6>
+          <h5 id="apply">Apply Template</h5>
+
+          <select class="selectpicker" id="sidebaroption">
+            <option data-icon="glyphicon-music">Table 1 Template</option>
+            <option data-icon="glyphicon-star">Option2</option>
+            <option data-icon="glyphicon-glass">Option3</option>
+          </select>
+          <h5 id="tablelayout">Table Layout</h5>
+<p id="single">&nbsp;&nbsp;SINGLE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DOUBLE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TRIPLE</p>
+          <button class="svg1" id="singleColumnButton" onClick="generate_table()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              width="65px"
+              height="78px"
+              viewBox="-0.5 -0.5 65 78"
+            >
+              <defs />
+              <g>
+                <rect
+                  x="0"
+                  y="0"
+                  width="64"
+                  height="77"
+                  fill="none"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="5"
+                  y="6"
+                  width="24"
+                  height="4"
+                  fill="none"
+                  stroke="none"
+                  pointer-events="all"
+                />
+                <g transform="translate(-0.5 -0.5)">
+                  <switch>
+                    <foreignObject
+                      style="overflow: visible; text-align: left;"
+                      pointer-events="none"
+                      width="100%"
+                      height="100%"
+                      requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                      ><div
+                        xmlns="http://www.w3.org/1999/xhtml"
+                        style="
+                          display: flex;
+                          align-items: unsafe center;
+                          justify-content: unsafe center;
+                          width: 22px;
+                          height: 1px;
+                          padding-top: 8px;
+                          margin-left: 6px;
+                        "
+                      >
+                        <div
+                          style="
+                            box-sizing: border-box;
+                            font-size: 0;
+                            text-align: center;
+                          "
+                        >
+                          <div
+                            style="
+                              display: inline-block;
+                              font-size: 5px;
+                              font-family: Helvetica;
+                              color: #000000;
+                              line-height: 1.2;
+                              pointer-events: all;
+                              white-space: normal;
+                              word-wrap: normal;
+                            "
+                          >
+                            ABC
+                          </div>
+                        </div>
+                      </div></foreignObject
+                    >
+                    <text
+                      x="17"
+                      y="9"
+                      fill="#000000"
+                      font-family="Helvetica"
+                      font-size="4px"
+                      text-anchor="middle"
+                    >
+                      ABC
+                    </text>
+                  </switch>
+                </g>
+                <rect
+                  x="35"
+                  y="6"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="35"
+                  y="13"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="35"
+                  y="20"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="35"
+                  y="27"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="35"
+                  y="34"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="35"
+                  y="48"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="35"
+                  y="41"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="35"
+                  y="55"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="35"
+                  y="62"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="35"
+                  y="69"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <image
+                  x="4"
+                  y="13.5"
+                  width="26"
+                  height="23"
+                  xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSIyNnB4IiBoZWlnaHQ9IjIzcHgiIHZpZXdCb3g9Ii0wLjUgLTAuNSAyNiAyMyI+PGRlZnMvPjxnPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyMSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYmJiYmJiIiBwb2ludGVyLWV2ZW50cz0iYWxsIi8+PHBhdGggZD0iTSAwIDMgTCAyNCAzIiBmaWxsPSJub25lIiBzdHJva2U9IiNiYmJiYmIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9InN0cm9rZSIvPjxwYXRoIGQ9Ik0gMCA2IEwgMjQgNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYmJiYmJiIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50ZXItZXZlbnRzPSJzdHJva2UiLz48cGF0aCBkPSJNIDAgOSBMIDI0IDkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYmJiYiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSAwIDEyIEwgMjQgMTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYmJiYiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSAwIDE1IEwgMjQgMTUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYmJiYiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSAwIDE4IEwgMjQgMTgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYmJiYiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSA4IDIxIEwgOCAwIiBmaWxsPSJub25lIiBzdHJva2U9IiNiYmJiYmIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9InN0cm9rZSIvPjxwYXRoIGQ9Ik0gMTYgMjEgTCAxNiAwIiBmaWxsPSJub25lIiBzdHJva2U9IiNiYmJiYmIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9InN0cm9rZSIvPjwvZz48L3N2Zz4="
+                  preserveAspectRatio="none"
+                />
+                <rect
+                  x="5"
+                  y="48"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="5"
+                  y="41"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="5"
+                  y="55"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="5"
+                  y="62"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="5"
+                  y="69"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+              </g>
+              <switch>
+                <g
+                  requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                />
+                <a
+                  transform="translate(0,-5)"
+                  xlink:href="https://desk.draw.io/support/solutions/articles/16000042487"
+                  target="_blank"
+                >
+                  <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                    Viewer does not support full SVG 1.1
+                  </text>
+                </a>
+              </switch>
+            </svg>
+          </button>
+          
+          <button class="svg2" onclick="doubleColumn()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              width="65px"
+              height="78px"
+              viewBox="-0.5 -0.5 65 78"
+            >
+              <defs />
+              <g>
+                <image
+                  x="4"
+                  y="13.5"
+                  width="57"
+                  height="23"
+                  xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI1N3B4IiBoZWlnaHQ9IjIzcHgiIHZpZXdCb3g9Ii0wLjUgLTAuNSA1NyAyMyI+PGRlZnMvPjxnPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI1NSIgaGVpZ2h0PSIyMSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYmJiYmJiIiBwb2ludGVyLWV2ZW50cz0iYWxsIi8+PHBhdGggZD0iTSAwIDMgTCA1NSAzIiBmaWxsPSJub25lIiBzdHJva2U9IiNiYmJiYmIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9InN0cm9rZSIvPjxwYXRoIGQ9Ik0gMCA2IEwgNTUgNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYmJiYmJiIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50ZXItZXZlbnRzPSJzdHJva2UiLz48cGF0aCBkPSJNIDAgOSBMIDU1IDkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYmJiYiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSAwIDEyIEwgNTUgMTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYmJiYiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSAwIDE1IEwgNTUgMTUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYmJiYiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSAwIDE4IEwgNTUgMTgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYmJiYiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSAxOCAyMSBMIDE4IDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYmJiYiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSAzNiAyMSBMIDM2IDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYmJiYiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PC9nPjwvc3ZnPg=="
+                  preserveAspectRatio="none"
+                />
+                <rect
+                  x="0"
+                  y="0"
+                  width="64"
+                  height="77"
+                  fill="none"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="5"
+                  y="6"
+                  width="55"
+                  height="4"
+                  fill="none"
+                  stroke="none"
+                  pointer-events="all"
+                />
+                <g transform="translate(-0.5 -0.5)">
+                  <switch>
+                    <foreignObject
+                      style="overflow: visible; text-align: left;"
+                      pointer-events="none"
+                      width="100%"
+                      height="100%"
+                      requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                      ><div
+                        xmlns="http://www.w3.org/1999/xhtml"
+                        style="
+                          display: flex;
+                          align-items: unsafe center;
+                          justify-content: unsafe center;
+                          width: 53px;
+                          height: 1px;
+                          padding-top: 8px;
+                          margin-left: 6px;
+                        "
+                      >
+                        <div
+                          style="
+                            box-sizing: border-box;
+                            font-size: 0;
+                            text-align: center;
+                          "
+                        >
+                          <div
+                            style="
+                              display: inline-block;
+                              font-size: 4px;
+                              font-family: Helvetica;
+                              color: #000000;
+                              line-height: 1.2;
+                              pointer-events: all;
+                              white-space: normal;
+                              word-wrap: normal;
+                            "
+                          >
+                            ABC
+                          </div>
+                        </div>
+                      </div></foreignObject
+                    >
+                    <text
+                      x="33"
+                      y="9"
+                      fill="#000000"
+                      font-family="Helvetica"
+                      font-size="4px"
+                      text-anchor="middle"
+                    >
+                      ABC
+                    </text>
+                  </switch>
+                </g>
+                <rect
+                  x="35"
+                  y="48"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="35"
+                  y="41"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="35"
+                  y="55"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="35"
+                  y="62"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="35"
+                  y="69"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="5"
+                  y="48"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="5"
+                  y="41"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="5"
+                  y="55"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="5"
+                  y="62"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="5"
+                  y="69"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+              </g>
+              <switch>
+                <g
+                  requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                />
+                <a
+                  transform="translate(0,-5)"
+                  xlink:href="https://desk.draw.io/support/solutions/articles/16000042487"
+                  target="_blank"
+                >
+                  <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                    Viewer does not support full SVG 1.1
+                  </text>
+                </a>
+              </switch>
+            </svg>
+          </button>
+          <button class="svg3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              width="65px"
+              height="78px"
+              viewBox="-0.5 -0.5 65 78"
+            >
+              <defs />
+              <g>
+                <image
+                  x="4"
+                  y="13.5"
+                  width="57"
+                  height="23"
+                  xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI1N3B4IiBoZWlnaHQ9IjIzcHgiIHZpZXdCb3g9Ii0wLjUgLTAuNSA1NyAyMyI+PGRlZnMvPjxnPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI1NSIgaGVpZ2h0PSIyMSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYmJiYmJiIiBwb2ludGVyLWV2ZW50cz0iYWxsIi8+PHBhdGggZD0iTSAwIDMgTCA1NSAzIiBmaWxsPSJub25lIiBzdHJva2U9IiNiYmJiYmIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9InN0cm9rZSIvPjxwYXRoIGQ9Ik0gMCA2IEwgNTUgNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYmJiYmJiIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50ZXItZXZlbnRzPSJzdHJva2UiLz48cGF0aCBkPSJNIDAgOSBMIDU1IDkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYmJiYiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSAwIDEyIEwgNTUgMTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYmJiYiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSAwIDE1IEwgNTUgMTUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYmJiYiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSAwIDE4IEwgNTUgMTgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYmJiYiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSAxOCAyMSBMIDE4IDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYmJiYiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSAzNiAyMSBMIDM2IDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYmJiYiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PC9nPjwvc3ZnPg=="
+                  preserveAspectRatio="none"
+                />
+                <rect
+                  x="0"
+                  y="0"
+                  width="64"
+                  height="77"
+                  fill="none"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="5"
+                  y="6"
+                  width="55"
+                  height="4"
+                  fill="none"
+                  stroke="none"
+                  pointer-events="all"
+                />
+                <g transform="translate(-0.5 -0.5)">
+                  <switch>
+                    <foreignObject
+                      style="overflow: visible; text-align: left;"
+                      pointer-events="none"
+                      width="100%"
+                      height="100%"
+                      requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                      ><div
+                        xmlns="http://www.w3.org/1999/xhtml"
+                        style="
+                          display: flex;
+                          align-items: unsafe center;
+                          justify-content: unsafe center;
+                          width: 53px;
+                          height: 1px;
+                          padding-top: 8px;
+                          margin-left: 6px;
+                        "
+                      >
+                        <div
+                          style="
+                            box-sizing: border-box;
+                            font-size: 0;
+                            text-align: center;
+                          "
+                        >
+                          <div
+                            style="
+                              display: inline-block;
+                              font-size: 4px;
+                              font-family: Helvetica;
+                              color: #000000;
+                              line-height: 1.2;
+                              pointer-events: all;
+                              white-space: normal;
+                              word-wrap: normal;
+                            "
+                          >
+                            ABC
+                          </div>
+                        </div>
+                      </div></foreignObject
+                    >
+                    <text
+                      x="33"
+                      y="9"
+                      fill="#000000"
+                      font-family="Helvetica"
+                      font-size="4px"
+                      text-anchor="middle"
+                    >
+                      ABC
+                    </text>
+                  </switch>
+                </g>
+                <rect
+                  x="24.5"
+                  y="48"
+                  width="16"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="24.5"
+                  y="41"
+                  width="16"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="24.5"
+                  y="55"
+                  width="16"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="24.5"
+                  y="62"
+                  width="16"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="24.5"
+                  y="69"
+                  width="16"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="5"
+                  y="48"
+                  width="16"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="5"
+                  y="41"
+                  width="16"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="5"
+                  y="55"
+                  width="16"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="5"
+                  y="62"
+                  width="16"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="5"
+                  y="69"
+                  width="16"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="44"
+                  y="48"
+                  width="16"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="44"
+                  y="41"
+                  width="16"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="44"
+                  y="55"
+                  width="16"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="44"
+                  y="62"
+                  width="16"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="44"
+                  y="69"
+                  width="16"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+              </g>
+              <switch>
+                <g
+                  requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                />
+                <a
+                  transform="translate(0,-5)"
+                  xlink:href="https://desk.draw.io/support/solutions/articles/16000042487"
+                  target="_blank"
+                >
+                  <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                    Viewer does not support full SVG 1.1
+                  </text>
+                </a>
+              </switch>
+            </svg>
+          </button>
+          <br />
+          <P id="spread">LANDSCAPE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SPREAD</P>
+          <button class="svg4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              width="65px"
+              height="78px"
+              viewBox="-0.5 -0.5 65 78"
+            >
+              <defs />
+              <g>
+                <rect
+                  x="0"
+                  y="0"
+                  width="64"
+                  height="77"
+                  fill="none"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <image
+                  x="13.5"
+                  y="5.5"
+                  width="46"
+                  height="67"
+                  xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI0NnB4IiBoZWlnaHQ9IjY3cHgiIHZpZXdCb3g9Ii0wLjUgLTAuNSA0NiA2NyI+PGRlZnMvPjxnPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI0NCIgaGVpZ2h0PSI2NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYmJiYmJiIiBwb2ludGVyLWV2ZW50cz0iYWxsIi8+PHBhdGggZD0iTSA3LjUgNjUgTCA3LjUgMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYmJiYmJiIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50ZXItZXZlbnRzPSJzdHJva2UiLz48cGF0aCBkPSJNIDE1IDY1IEwgMTUgMCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYmJiYmJiIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50ZXItZXZlbnRzPSJzdHJva2UiLz48cGF0aCBkPSJNIDIyLjUgNjUgTCAyMi41IDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYmJiYiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSAzMCA2NSBMIDMwIDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYmJiYiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSAzNy41IDY1IEwgMzcuNSAwIiBmaWxsPSJub25lIiBzdHJva2U9IiNiYmJiYmIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9InN0cm9rZSIvPjxwYXRoIGQ9Ik0gMCA0MyBMIDQ0IDQzIiBmaWxsPSJub25lIiBzdHJva2U9IiNiYmJiYmIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9InN0cm9rZSIvPjxwYXRoIGQ9Ik0gMCAyMSBMIDQ0IDIxIiBmaWxsPSJub25lIiBzdHJva2U9IiNiYmJiYmIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9InN0cm9rZSIvPjwvZz48L3N2Zz4="
+                  preserveAspectRatio="none"
+                />
+                <rect
+                  x="-25.13"
+                  y="35.88"
+                  width="65"
+                  height="5.25"
+                  fill="none"
+                  stroke="none"
+                  transform="rotate(270,7.37,38.5)"
+                  pointer-events="all"
+                />
+                <g
+                  transform="translate(-0.5 -0.5)rotate(270 7.3700000000000045 38.504999999999995)"
+                >
+                  <switch>
+                    <foreignObject
+                      style="overflow: visible; text-align: left;"
+                      pointer-events="none"
+                      width="100%"
+                      height="100%"
+                      requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                      ><div
+                        xmlns="http://www.w3.org/1999/xhtml"
+                        style="
+                          display: flex;
+                          align-items: unsafe center;
+                          justify-content: unsafe center;
+                          width: 63px;
+                          height: 1px;
+                          padding-top: 39px;
+                          margin-left: -24px;
+                        "
+                      >
+                        <div
+                          style="
+                            box-sizing: border-box;
+                            font-size: 0;
+                            text-align: center;
+                          "
+                        >
+                          <div
+                            style="
+                              display: inline-block;
+                              font-size: 4px;
+                              font-family: Helvetica;
+                              color: #000000;
+                              line-height: 1.2;
+                              pointer-events: all;
+                              white-space: normal;
+                              word-wrap: normal;
+                            "
+                          >
+                            ABC
+                          </div>
+                        </div>
+                      </div></foreignObject
+                    >
+                    <text
+                      x="7"
+                      y="40"
+                      fill="#000000"
+                      font-family="Helvetica"
+                      font-size="4px"
+                      text-anchor="middle"
+                    >
+                      ABC
+                    </text>
+                  </switch>
+                </g>
+                <path
+                  d="M 38.5 6 L 38.5 6"
+                  fill="none"
+                  stroke="#bbbbbb"
+                  stroke-miterlimit="10"
+                  pointer-events="stroke"
+                />
+              </g>
+              <switch>
+                <g
+                  requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                />
+                <a
+                  transform="translate(0,-5)"
+                  xlink:href="https://desk.draw.io/support/solutions/articles/16000042487"
+                  target="_blank"
+                >
+                  <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                    Viewer does not support full SVG 1.1
+                  </text>
+                </a>
+              </switch>
+            </svg>
+          </button>
+          <button class="svg5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              version="1.1"
+              width="130px"
+              height="78px"
+              viewBox="-0.5 -0.5 129 78"
+            >
+              <defs />
+              <g>
+                <rect
+                  x="63.5"
+                  y="0"
+                  width="64"
+                  height="77"
+                  fill="none"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="-0.5"
+                  y="0"
+                  width="64"
+                  height="77"
+                  fill="none"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <image
+                  x="3.5"
+                  y="13.5"
+                  width="120"
+                  height="23"
+                  xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHdpZHRoPSI1N3B4IiBoZWlnaHQ9IjIzcHgiIHZpZXdCb3g9Ii0wLjUgLTAuNSA1NyAyMyI+PGRlZnMvPjxnPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI1NSIgaGVpZ2h0PSIyMSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYmJiYmJiIiBwb2ludGVyLWV2ZW50cz0iYWxsIi8+PHBhdGggZD0iTSAwIDMgTCA1NSAzIiBmaWxsPSJub25lIiBzdHJva2U9IiNiYmJiYmIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgcG9pbnRlci1ldmVudHM9InN0cm9rZSIvPjxwYXRoIGQ9Ik0gMCA2IEwgNTUgNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYmJiYmJiIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50ZXItZXZlbnRzPSJzdHJva2UiLz48cGF0aCBkPSJNIDAgOSBMIDU1IDkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYmJiYiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSAwIDEyIEwgNTUgMTIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYmJiYiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSAwIDE1IEwgNTUgMTUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYmJiYiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSAwIDE4IEwgNTUgMTgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYmJiYiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSAxOCAyMSBMIDE4IDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYmJiYiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PHBhdGggZD0iTSAzNiAyMSBMIDM2IDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JiYmJiYiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBwb2ludGVyLWV2ZW50cz0ic3Ryb2tlIi8+PC9nPjwvc3ZnPg=="
+                  preserveAspectRatio="none"
+                />
+                <rect
+                  x="4.5"
+                  y="6"
+                  width="55"
+                  height="4"
+                  fill="none"
+                  stroke="none"
+                  pointer-events="all"
+                />
+                <g transform="translate(-0.5 -0.5)">
+                  <switch>
+                    <foreignObject
+                      style="overflow: visible; text-align: left;"
+                      pointer-events="none"
+                      width="100%"
+                      height="100%"
+                      requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                      ><div
+                        xmlns="http://www.w3.org/1999/xhtml"
+                        style="
+                          display: flex;
+                          align-items: unsafe center;
+                          justify-content: unsafe flex-start;
+                          width: 53px;
+                          height: 1px;
+                          padding-top: 8px;
+                          margin-left: 7px;
+                        "
+                      >
+                        <div
+                          style="
+                            box-sizing: border-box;
+                            font-size: 0;
+                            text-align: left;
+                          "
+                        >
+                          <div
+                            style="
+                              display: inline-block;
+                              font-size: 4px;
+                              font-family: Helvetica;
+                              color: #000000;
+                              line-height: 1.2;
+                              pointer-events: all;
+                              white-space: normal;
+                              word-wrap: normal;
+                            "
+                          >
+                            ABC
+                          </div>
+                        </div>
+                      </div></foreignObject
+                    >
+                    <text
+                      x="7"
+                      y="9"
+                      fill="#000000"
+                      font-family="Helvetica"
+                      font-size="4px"
+                    >
+                      ABC
+                    </text>
+                  </switch>
+                </g>
+                <rect
+                  x="34.5"
+                  y="48"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="34.5"
+                  y="41"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="34.5"
+                  y="55"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="34.5"
+                  y="62"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="34.5"
+                  y="69"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="4.5"
+                  y="48"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="4.5"
+                  y="41"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="4.5"
+                  y="55"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="4.5"
+                  y="62"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="4.5"
+                  y="69"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="98.5"
+                  y="48"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="98.5"
+                  y="41"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="98.5"
+                  y="55"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="98.5"
+                  y="62"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="98.5"
+                  y="69"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="68.5"
+                  y="48"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="68.5"
+                  y="41"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="68.5"
+                  y="55"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="68.5"
+                  y="62"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+                <rect
+                  x="68.5"
+                  y="69"
+                  width="24"
+                  height="1.5"
+                  fill="#bbbbbb"
+                  stroke="#bbbbbb"
+                  pointer-events="all"
+                />
+              </g>
+              <switch>
+                <g
+                  requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+                />
+                <a
+                  transform="translate(0,-5)"
+                  xlink:href="https://desk.draw.io/support/solutions/articles/16000042487"
+                  target="_blank"
+                >
+                  <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                    Viewer does not support full SVG 1.1
+                  </text>
+                </a>
+              </switch>
+            </svg>
+          </button>
+          <h5 id="coldis">Column Distribution</h5>
+          <button class="adjust1">Equal Adjust</button>
+          <button class="adjust2">Smart adjust</button>
+          
+          <div class="fontdiv"> 
+          <!-- <p id="fontsize01">Font Size</p> -->
+          <div class="fontopt">
+            <p id="fontsize01">Font Size</p>
+          <select class="selectpicker" id="sidebaropt2">
+            <option data-icon="glyphicon-music">1</option>
+            <option data-icon="glyphicon-star">2</option>
+            <option data-icon="glyphicon-glass">3</option>
+          </select>
+          </div>
+          </div>
+          <h5 id="note">Note:</h5>
+          <ul class="ultxt">
+            <li id="li">
+              To choose a column, click on its header
+            </li>
+            <li id="li">Manually resize columns by dragging</li>
+            <li id="li">
+              To select multiple column, hold<br />
+              <P id="liofp">Shift key and click their headers<P>
+            </li>
+            <li id="li">
+              To select individual cells, hold<br />
+
+              <P id="liofp"> Ctrl key and click the cells</P>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="sitem2">
+          <h5>Table Layout</h5>
+        </div> -->
+        <!-- <div class="sitem3">
+          <h6>Column Distribution</h6>
+          <button>Equal Adjust</button>
+          <button>Smart adjust</button>
+          <h5>Font Size</h5>
+          <select class="selectpicker">
+            <option data-icon="glyphicon-music">Option1</option>
+            <option data-icon="glyphicon-star">Option2</option>
+            <option data-icon="glyphicon-glass">Option3</option>
+          </select>
+          <h5>Note:</h5>
+          <ul>
+            <li>To choose a column, click on its header</li>
+            <li>Manually resize columns by dragging</li>
+            <li>
+              To select multiple column, hold shift key and click their headers
+            </li>
+            <li>
+              To select individual cells, hold Ctrl key and click the cells
+            </li>
+          </ul> -->
+        <!-- </div> -->
+        <!-- </div> -->
+      </div>
+
+  
+
+
+
+
+
+
+
+      <div class="content">
+        <div class="pageSetter">
+          
+
+          <div id="tableContainer">
+            <div class="layoutContainer" id="layoutHead">
+              
+              <p style="padding-bottom: 10px;"></p>
+               
+            </div>
+            <!-- <div class="layoutContainer2" id="layoutHead2">
+
+            </div> -->
+            <!-- <div class="tableWrapper"></div> -->
+
+
+            <!-- <div class="tableWrapper">
+              <table
+                
+              >
+                
+                <thead >
+                  <tr >
+                    <td
+                     
+                    >
+                      <p
+                       
+                      >
+                        Characteristics
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        Time period
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        1990–1994
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        1995–1999
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        2000–2004
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        2005–2009
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        2010–2014
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                       
+                      >
+                        Total
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                  </tr>
+                </thead>
+                <tbody >
+                  <tr
+                  
+                  >
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        Women’s age at delivery (years)
+                      </p>
+                      <div
+                   
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                       
+                      >
+                        n (%)
+                      </p>
+                      <div
+                     
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                   
+                    >
+                      <p
+                       
+                      >
+                        n (%)
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        n (%)
+                      </p>
+                      <div
+                     
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                      
+                    >
+                      <p
+                      
+                      >
+                        n (%)
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        n (%)
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                    
+                      >
+                        &emsp;n (%)
+                      </p>
+                      <div
+                     
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                  </tr>
+                  <tr >
+                    <td
+                   
+                    >
+                      <p
+                        
+                      >
+                        &lt;20
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                      
+                      >
+                        2118 (16)
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                       
+                      >
+                        1996 (16)
+                      </p>
+                      <div
+                     
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                       
+                      >
+                        2361 (18)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        2381 (20)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                       
+                      >
+                        &emsp;2640 (22)
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                   
+                    >
+                      <p
+                       
+                      >
+                        &emsp;11&thinsp;496 (18)
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                   
+                  >
+                    <td
+                     
+                    >
+                      <p
+                   
+                      >
+                        20–24
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                       
+                      >
+                        4683(36)
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                      
+                      >
+                        4080 (32)
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        4036 (30)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                    
+                    >
+                      <p
+                       
+                      >
+                        3927 (32)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        3879 (33)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                      
+                      >
+                        &emsp;20&thinsp;605 (33)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                  </tr>
+                  <tr >
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        25–29
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                  
+                    >
+                      <p>
+                        
+                        3732 (28)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                     
+                      >
+                        3654 (28)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                       
+                      >
+                        3446 (26)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        2993 (25)
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                    
+                    >
+                      <p
+                        
+                      >
+                        2839 (24)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                  
+                    >
+                      <p
+                        
+                      >
+                        &emsp;16&thinsp;664 (26)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                   
+                  >
+                    <td
+                   
+                    >
+                      <p
+                       
+                      >
+                        30–34
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                       
+                      >
+                        1781 (14)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                       
+                      >
+                        2266 (18)
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                    
+                    >
+                      <p
+                       
+                      >
+                        2401 (18)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                   
+                      >
+                        1801 (15)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        1616 (14)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        &emsp;9865 (16)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                  </tr>
+                  <tr >
+                    <td
+                     
+                    >
+                      <p
+                       
+                      >
+                        ≥35
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                      
+                      >
+                        771(6)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                      
+                      >
+                        802 (6)
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        1127 (8)
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                       
+                      >
+                        964 (8)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        769 (7)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        &emsp;4433 (7)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                   
+                  >
+                    <td
+                      
+                    >
+                      <p
+                       
+                      >
+                        Parity
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        &emsp;
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                       
+                      >
+                        &emsp;
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        &emsp;
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        &emsp;
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        &emsp;
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        &emsp;
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                  </tr>
+                  <tr >
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        0
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        3840 (29)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                       
+                      >
+                        3980 (31)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        4550 (34)
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                       
+                      >
+                        4516 (37)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                    
+                    >
+                      <p
+                       
+                      >
+                        4960 (42)
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        &emsp;21&thinsp;846 (35)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                   
+                  >
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        1
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        2952 (23)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      d
+                    >
+                      <p
+                      
+                      >
+                        3222 (25)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                    
+                    >
+                      <p
+                  
+                      >
+                        3556 (27)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                  
+                    >
+                      <p
+                        
+                      >
+                        3613 (30)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                    
+                    >
+                      <p
+                        
+                      >
+                        3682 (31)
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                      
+                      >
+                        &emsp;17&thinsp;025 (27)
+                      </p>
+                      <div
+                       
+                      <!-- >
+                        &nbsp;
+                      </div>
+                    </td>
+                  </tr>
+                  <tr >
+                    <td
+                     
+                    >
+                      <p
+                      
+                      >
+                        2
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                       
+                      >
+                        2285 (17)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                    
+                      >
+                        2424 (19)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        2565 (19)
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                   
+                      >
+                        2214 (18)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                   
+                      >
+                        2029 (17)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        &emsp;11&thinsp;517 (18)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                   
+                  >
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        ≥3
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        4008 (31)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                    
+                      >
+                        3172 (25)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                     
+                      >
+                        2700 (20)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                    
+                    >
+                      <p
+                     
+                      >
+                        1723 (14)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        1072 (9)
+                      </p>
+                      <div
+                                         
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        &emsp;12&thinsp;675 (20)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                  </tr>
+                  <tr >
+                    <td
+                     
+                    >
+                      <p
+                       
+                      >
+                        Women’s education (years)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                      
+                      >
+                        &emsp;
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        &emsp;
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        &emsp;
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                       
+                      >
+                        &emsp;
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                       
+                      >
+                        &emsp;
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                      
+                      >
+                        &emsp;
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                  
+                  >
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        0
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        5999 (46)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        4186 (33)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                       
+                      >
+                        2771 (21)
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                       
+                      >
+                        1581 (13)
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        574 (5)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                    
+                    >
+                      <p
+                       
+                      >
+                        &emsp;15&thinsp;111 (24)
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                  </tr>
+                  <tr >
+                    <td
+                      
+                    >
+                      <p
+                      
+                      >
+                        1–5
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                    
+                    >
+                      <p
+                       
+                      >
+                        3408 (26)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                       
+                      >
+                        3227 (25)
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        2681 (20)
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        2856 (24)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                       
+                      >
+                        2293 (19)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        &emsp;14&thinsp;465 (23)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                   
+                  >
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        ≥6
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                       
+                      >
+                        3678 (28)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                       
+                      >
+                        5385 (42)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        7919 (59)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                       
+                      >
+                        7629 (63)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        8876 (76)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        &emsp;33&thinsp;487 (53)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                  </tr>
+                  <tr >
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        Live births
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        &emsp;
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                       
+                      >
+                        &emsp;
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                      
+                      >
+                        &emsp;
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        &emsp;
+                      </p>
+                      <div
+                                         >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                    
+                    >
+                      <p
+                       
+                      >
+                        &emsp;
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                       
+                      >
+                        &emsp;
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                  
+                  >
+                    <td
+                   
+                    >
+                      <p
+                        
+                      >
+                        Term (GW≥37)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        9244 (70.6)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        9601 (75)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        10&thinsp;630 (79.5)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        10&thinsp;253 (85)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        10&thinsp;449 (89)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                       
+                      >
+                        &emsp;50&thinsp;177 (79.6)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                  </tr>
+                  <tr >
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        Late preterm (GW 34–36)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                       
+                      >
+                        2812 (21.5)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                     
+                      >
+                        2316 (18.1)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                  
+                      >
+                        1963 (14.7)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        1311 (10.9)
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        993 (8.5)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        &emsp;9395 (14.9)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                   
+                  >
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        Moderate preterm (GW 32–33)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                      
+                      >
+                        763 (5.8)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                       
+                      >
+                        546 (4.3)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                       
+                      >
+                        444 (3.3)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                      
+                      >
+                        294 (2.4)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        193 (1.6)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        &emsp;2240 (3.6)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                  </tr>
+                  <tr >
+                    <td
+                     
+                    >
+                      <p
+                       
+                      >
+                        Very preterm (GW&lt;32)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        266 (2.0)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        335 (2.6)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                    
+                    >
+                      <p
+                       
+                      >
+                        334 (2.5)
+                      </p>
+                      <div
+
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        208 (1.7)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        108 (0.9)
+                      </p>
+                      <div
+                       
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        &emsp;1251(2)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                  </tr>
+                  <tr
+                    
+                  >
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        <em 
+                          >Total preterm (GW&lt;37</em
+                        >)
+                      </p>
+                      <div
+                      
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        <em >3841</em>
+                        (<em >29</em>)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        <em >3197</em>
+                        (<em >25</em>)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        <em >2741</em>
+                        (<em >20</em>)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                       
+                      >
+                        <em >1813</em>
+                        (<em >15</em>)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                     
+                    >
+                      <p
+                        
+                      >
+                        <em >1294</em>
+                        (<em >11</em>)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                    <td
+                      
+                    >
+                      <p
+                        
+                      >
+                        &emsp;<em 
+                          >12&thinsp;886</em
+                        >
+                        (<em >20</em>)
+                      </p>
+                      <div
+                        
+                      >
+                        &nbsp;
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div> -->
+            
+
+
+
+
+        </div>
+          <!-- <div id="tableContainer">
+            <div class="layoutContainer" id="layoutc" style="width: 600px; height: 600px;">
+                <div class="layout" data-class="doubleColumn" style="width: 246px; height: 600px; float:left">
+                    
+                </div>
+                <div class="layout" data-class="singleColumn" style="width: 246px; height: 600px; float:left">
+                    
+                </div>
+            </div>
+            <div class="tableWrapper"></div>
+        </div> -->
+       
+      </div>
+      <!-- <div class="footer">footer</div> -->
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+    crossorigin="anonymous"></script>
+    <script src="indesignAutoPageConfig.js">
+    </script>
+    <!-- <script src="tablessetter.js">
+    </script>  -->
+    <script src="index.js">
+    </script> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
+
+
+
+
+
+<!-- <div id="tableContainer">
+  <div class="layoutContainer" style="width: 246.587px; height: 72px;">
+      <div class="layout" data-class="doubleColumn">
+          
+      </div>
+      <div class="layout" data-class="singleColumn">
+          
+      </div>
+  </div>
+  <div class="tableWrapper"></div>
+</div> -->
